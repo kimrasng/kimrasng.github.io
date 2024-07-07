@@ -1,0 +1,91 @@
+/* 기본 스타일 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.div-text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main-text {
+    font-size: 2em;
+    font-weight: bold;
+    border-right: 1px solid whitesmoke;
+    display: inline-block;
+    margin: 200px;
+    height: 60.1px;
+}
+
+.links {
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.links > a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+/* 작은 화면(휴대폰) */
+@media (max-width: 600px) {
+    .main-text {
+        font-size: 1.5em;
+        margin: 100px 0; /* 줄어든 화면에 맞게 조정 */
+    }
+
+    .links {
+        gap: 5px; /* 간격 조정 */
+        font-size: 1.5em; /* 아이콘 크기 조정 */
+    }
+
+    .links a {
+        font-size: 1.2em; /* 작은 화면에서의 아이콘 크기 */
+    }
+}
+
+/* 중간 화면(태블릿) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .main-text {
+        font-size: 2em;
+    }
+
+    .links {
+        gap: 10px;
+        font-size: 1.75em;
+    }
+
+    .links a {
+        font-size: 1.75em;
+    }
+}
+
+/* 큰 화면(데스크탑) */
+@media (min-width: 1025px) {
+    .main-text {
+        font-size: 2.5em;
+    }
+
+    .links {
+        gap: 10px;
+        font-size: 2em;
+    }
+
+    .links a {
+        font-size: 2em;
+    }
+}

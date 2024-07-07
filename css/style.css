@@ -1,0 +1,27 @@
+html {
+    overflow: hidden;
+}
+
+html, body {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    color: whitesmoke;
+}
+
+* {
+    background-color: rgb(29, 26, 26);
+    font-family: "sb";
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family:sb ;
+    src: url('/css/font/SB\(B\).ttf');
+}
+
+@media (max-width: 50px) {
+    
+}
